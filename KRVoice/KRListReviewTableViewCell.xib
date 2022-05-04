@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="KRListReviewTableViewCell" customModule="KRVoice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRM-Zn-iqa">
+                        <rect key="frame" x="16" y="11" width="288" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="zxN-dn-oBu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpP-mQ-YHZ" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="16" y="40" width="288" height="27"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="wfb-An-edd"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsA-98-EpD">
+                        <rect key="frame" x="16" y="67" width="288" height="57"/>
+                        <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="WsA-98-EpD" secondAttribute="trailing" id="B6Q-p9-7tf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DpP-mQ-YHZ" secondAttribute="trailing" id="BaL-UV-PBd"/>
+                    <constraint firstItem="DpP-mQ-YHZ" firstAttribute="top" secondItem="jRM-Zn-iqa" secondAttribute="bottom" constant="8" symbolic="YES" id="E1P-HC-sMu"/>
+                    <constraint firstItem="WsA-98-EpD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Qrq-F6-EvD"/>
+                    <constraint firstItem="WsA-98-EpD" firstAttribute="top" secondItem="DpP-mQ-YHZ" secondAttribute="bottom" id="RMu-LW-9T3"/>
+                    <constraint firstItem="jRM-Zn-iqa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="XbM-ws-ptc"/>
+                    <constraint firstItem="jRM-Zn-iqa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dvc-m6-sDq"/>
+                    <constraint firstItem="DpP-mQ-YHZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pJr-bo-XmM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WsA-98-EpD" secondAttribute="bottom" id="tfY-PC-98B"/>
+                    <constraint firstItem="jRM-Zn-iqa" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ust-3e-VZL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="reviewDescriptionLabel" destination="WsA-98-EpD" id="DeN-HK-QRx"/>
+                <outlet property="reviewOwnerLabel" destination="jRM-Zn-iqa" id="McA-Ge-yrm"/>
+                <outlet property="starRating" destination="DpP-mQ-YHZ" id="8fx-p2-W0l"/>
+            </connections>
+            <point key="canvasLocation" x="138.75" y="150.625"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="DpP-mQ-YHZ">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+</document>

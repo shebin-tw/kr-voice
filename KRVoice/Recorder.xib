@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecorderView" customModule="KRVoice" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="qft-Hf-rN3"/>
+                <outlet property="rec" destination="7oZ-8S-R1W" id="ar6-L8-0Nz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8V-c1-zjK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="256"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVp-vz-Nji">
+                            <rect key="frame" x="322" y="8" width="84" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="hMo-Gy-fb0"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="keyboard"/>
+                            <connections>
+                                <action selector="keyboardActionWithSender:" destination="-1" eventType="touchUpInside" id="ba9-OM-U2S"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="77" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oZ-8S-R1W" customClass="RecordingButton" customModule="KRVoice" customModuleProvider="target">
+                            <rect key="frame" x="182" y="103" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="87G-Io-4eE"/>
+                                <constraint firstAttribute="height" constant="50" id="F8A-Jy-dXi"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mic" translatesAutoresizingMaskIntoConstraints="NO" id="Bo0-y7-Oac">
+                            <rect key="frame" x="170" y="91" width="74" height="74"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Bo0-y7-Oac" firstAttribute="centerX" secondItem="B8V-c1-zjK" secondAttribute="centerX" id="0Yv-Xp-Ssi"/>
+                        <constraint firstItem="7oZ-8S-R1W" firstAttribute="centerX" secondItem="B8V-c1-zjK" secondAttribute="centerX" id="1Yi-mL-JLf"/>
+                        <constraint firstItem="Bo0-y7-Oac" firstAttribute="centerY" secondItem="B8V-c1-zjK" secondAttribute="centerY" id="4Xv-Iv-b2r"/>
+                        <constraint firstItem="7oZ-8S-R1W" firstAttribute="centerY" secondItem="B8V-c1-zjK" secondAttribute="centerY" id="R6f-ox-7mX"/>
+                        <constraint firstItem="dVp-vz-Nji" firstAttribute="top" secondItem="B8V-c1-zjK" secondAttribute="top" constant="8" id="bJs-db-YUu"/>
+                        <constraint firstAttribute="trailing" secondItem="dVp-vz-Nji" secondAttribute="trailing" constant="8" id="pdK-PX-1EI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="B8V-c1-zjK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="OfH-Sr-aqR"/>
+                <constraint firstItem="B8V-c1-zjK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Wbw-Nz-FK3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="B8V-c1-zjK" secondAttribute="bottom" id="gSA-GC-IwO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="B8V-c1-zjK" secondAttribute="trailing" id="s4U-cj-Bd2"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="7oZ-8S-R1W">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Mic" width="74" height="74"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

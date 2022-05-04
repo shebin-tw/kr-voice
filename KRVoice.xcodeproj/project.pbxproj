@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09D32B1EAEAE56DA9CCF8326 /* Pods_KRVoiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CCFDEFE3CE58BB574978DC /* Pods_KRVoiceTests.framework */; };
+		39E5A1ED7E35CB2DE6511FA6 /* Pods_KRVoiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DCC4D970E4AAAF6562893A /* Pods_KRVoiceUITests.framework */; };
+		7892F21FAC07588ED11017E8 /* Pods_KRVoice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265D4532BDD1B2939622CF40 /* Pods_KRVoice.framework */; };
+		982E2C4327FF2CEB00F496BA /* AudioInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E2C4227FF2CEB00F496BA /* AudioInstances.swift */; };
+		984D99C8280D07E900AB8C43 /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D99C7280D07E900AB8C43 /* ReviewItem.swift */; };
+		984D99CB280D1BCB00AB8C43 /* KRListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D99C9280D1BCB00AB8C43 /* KRListReviewTableViewCell.swift */; };
+		984D99CC280D1BCB00AB8C43 /* KRListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984D99CA280D1BCB00AB8C43 /* KRListReviewTableViewCell.xib */; };
+		9890367D27FF0DF900519831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890367C27FF0DF900519831 /* AppDelegate.swift */; };
+		9890367F27FF0DF900519831 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890367E27FF0DF900519831 /* SceneDelegate.swift */; };
+		9890368427FF0DFA00519831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9890368227FF0DFA00519831 /* Main.storyboard */; };
+		9890368727FF0DFA00519831 /* KRVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9890368527FF0DFA00519831 /* KRVoice.xcdatamodeld */; };
+		9890368927FF0DFB00519831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9890368827FF0DFB00519831 /* Assets.xcassets */; };
+		9890368C27FF0DFB00519831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9890368A27FF0DFB00519831 /* LaunchScreen.storyboard */; };
+		9890369727FF0DFC00519831 /* KRVoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9890369627FF0DFC00519831 /* KRVoiceTests.swift */; };
+		989036A127FF0DFC00519831 /* KRVoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036A027FF0DFC00519831 /* KRVoiceUITests.swift */; };
+		989036A327FF0DFC00519831 /* KRVoiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036A227FF0DFC00519831 /* KRVoiceUITestsLaunchTests.swift */; };
+		989036B227FF0EDF00519831 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036AF27FF0EDF00519831 /* Settings.swift */; };
+		989036B327FF0EDF00519831 /* KRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036B027FF0EDF00519831 /* KRViewController.swift */; };
+		989036B427FF0EDF00519831 /* KRVoiceServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036B127FF0EDF00519831 /* KRVoiceServiceClient.swift */; };
+		989036B627FF148300519831 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036B527FF148300519831 /* ReviewTableViewController.swift */; };
+		989036B927FF15FD00519831 /* Recorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989036B727FF15FD00519831 /* Recorder.xib */; };
+		989036BA27FF15FD00519831 /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989036B827FF15FD00519831 /* RecorderView.swift */; };
+		989A811C28053F57001DC791 /* SSSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A811A28053F57001DC791 /* SSSettingsViewController.swift */; };
+		989A811D28053F57001DC791 /* SSSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989A811B28053F57001DC791 /* SSSettingsViewController.xib */; };
+		989A811F28060079001DC791 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A811E28060079001DC791 /* Theme.swift */; };
+		989A812128061A1B001DC791 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A812028061A1B001DC791 /* HomeTableViewController.swift */; };
+		989A812328061A2F001DC791 /* home.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 989A812228061A2F001DC791 /* home.PNG */; };
+		989A812528061CC1001DC791 /* PDPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A812428061CC1001DC791 /* PDPTableViewController.swift */; };
+		989A812728061D0E001DC791 /* PDP.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 989A812628061D0E001DC791 /* PDP.PNG */; };
+		989A812928061E68001DC791 /* KRListReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989A812828061E68001DC791 /* KRListReviewTableViewController.swift */; };
+		989A812C2806263D001DC791 /* SMC.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 989A812A2806263D001DC791 /* SMC.PNG */; };
+		989A812D2806263D001DC791 /* Banner.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 989A812B2806263D001DC791 /* Banner.PNG */; };
+		98E99033280496DE007200B9 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E99032280496DE007200B9 /* AudioModel.swift */; };
+		98E990352804B3D3007200B9 /* AudioBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E990342804B3D3007200B9 /* AudioBuffer.swift */; };
+		98E990372804C2DE007200B9 /* REcordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E990362804C2DE007200B9 /* REcordingButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9890369327FF0DFC00519831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9890367127FF0DF900519831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9890367827FF0DF900519831;
+			remoteInfo = KRVoice;
+		};
+		9890369D27FF0DFC00519831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9890367127FF0DF900519831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9890367827FF0DF900519831;
+			remoteInfo = KRVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F1DA88056EF86989C8911BE /* Pods-KRVoiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVoiceTests.debug.xcconfig"; path = "Target Support Files/Pods-KRVoiceTests/Pods-KRVoiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12CCFDEFE3CE58BB574978DC /* Pods_KRVoiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRVoiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		265D4532BDD1B2939622CF40 /* Pods_KRVoice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRVoice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D5511298D7C5ECFB8A4FFD6 /* Pods-KRVoiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVoiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-KRVoiceUITests/Pods-KRVoiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63B830DCB161C916C0BC8CFC /* Pods-KRVoice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVoice.debug.xcconfig"; path = "Target Support Files/Pods-KRVoice/Pods-KRVoice.debug.xcconfig"; sourceTree = "<group>"; };
+		7C32D08026541B734D050413 /* Pods-KRVoiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVoiceTests.release.xcconfig"; path = "Target Support Files/Pods-KRVoiceTests/Pods-KRVoiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		982E2C4227FF2CEB00F496BA /* AudioInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInstances.swift; sourceTree = "<group>"; };
+		984D99C7280D07E900AB8C43 /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		984D99C9280D1BCB00AB8C43 /* KRListReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRListReviewTableViewCell.swift; sourceTree = "<group>"; };
+		984D99CA280D1BCB00AB8C43 /* KRListReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KRListReviewTableViewCell.xib; sourceTree = "<group>"; };
+		9890367927FF0DF900519831 /* KRVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9890367C27FF0DF900519831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9890367E27FF0DF900519831 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9890368327FF0DFA00519831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9890368627FF0DFA00519831 /* KRVoice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KRVoice.xcdatamodel; sourceTree = "<group>"; };
+		9890368827FF0DFB00519831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9890368B27FF0DFB00519831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9890368D27FF0DFB00519831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9890369227FF0DFC00519831 /* KRVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9890369627FF0DFC00519831 /* KRVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRVoiceTests.swift; sourceTree = "<group>"; };
+		9890369C27FF0DFC00519831 /* KRVoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRVoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		989036A027FF0DFC00519831 /* KRVoiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRVoiceUITests.swift; sourceTree = "<group>"; };
+		989036A227FF0DFC00519831 /* KRVoiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRVoiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		989036AF27FF0EDF00519831 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		989036B027FF0EDF00519831 /* KRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRViewController.swift; sourceTree = "<group>"; };
+		989036B127FF0EDF00519831 /* KRVoiceServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRVoiceServiceClient.swift; sourceTree = "<group>"; };
+		989036B527FF148300519831 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		989036B727FF15FD00519831 /* Recorder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Recorder.xib; sourceTree = "<group>"; };
+		989036B827FF15FD00519831 /* RecorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		989A811A28053F57001DC791 /* SSSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSettingsViewController.swift; sourceTree = "<group>"; };
+		989A811B28053F57001DC791 /* SSSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SSSettingsViewController.xib; sourceTree = "<group>"; };
+		989A811E28060079001DC791 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		989A812028061A1B001DC791 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		989A812228061A2F001DC791 /* home.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.PNG; sourceTree = "<group>"; };
+		989A812428061CC1001DC791 /* PDPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDPTableViewController.swift; sourceTree = "<group>"; };
+		989A812628061D0E001DC791 /* PDP.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PDP.PNG; sourceTree = "<group>"; };
+		989A812828061E68001DC791 /* KRListReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRListReviewTableViewController.swift; sourceTree = "<group>"; };
+		989A812A2806263D001DC791 /* SMC.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SMC.PNG; sourceTree = "<group>"; };
+		989A812B2806263D001DC791 /* Banner.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Banner.PNG; sourceTree = "<group>"; };
+		98E99032280496DE007200B9 /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		98E990342804B3D3007200B9 /* AudioBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBuffer.swift; sourceTree = "<group>"; };
+		98E990362804C2DE007200B9 /* REcordingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REcordingButton.swift; sourceTree = "<group>"; };
+		B75DC14824A09BDA47A32A75 /* Pods-KRVoiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVoiceUITests.release.xcconfig"; path = "Target Support Files/Pods-KRVoiceUITests/Pods-KRVoiceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C1FDE87A10D92266FEC69D04 /* Pods-KRVoice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KRVoice.release.xcconfig"; path = "Target Support Files/Pods-KRVoice/Pods-KRVoice.release.xcconfig"; sourceTree = "<group>"; };
+		C2DCC4D970E4AAAF6562893A /* Pods_KRVoiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRVoiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9890367627FF0DF900519831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7892F21FAC07588ED11017E8 /* Pods_KRVoice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9890368F27FF0DFC00519831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D32B1EAEAE56DA9CCF8326 /* Pods_KRVoiceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9890369927FF0DFC00519831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39E5A1ED7E35CB2DE6511FA6 /* Pods_KRVoiceUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0163422AA6504DA7B4D4670B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				265D4532BDD1B2939622CF40 /* Pods_KRVoice.framework */,
+				12CCFDEFE3CE58BB574978DC /* Pods_KRVoiceTests.framework */,
+				C2DCC4D970E4AAAF6562893A /* Pods_KRVoiceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9890367027FF0DF900519831 = {
+			isa = PBXGroup;
+			children = (
+				9890367B27FF0DF900519831 /* KRVoice */,
+				9890369527FF0DFC00519831 /* KRVoiceTests */,
+				9890369F27FF0DFC00519831 /* KRVoiceUITests */,
+				9890367A27FF0DF900519831 /* Products */,
+				C22E11B389B5F2DD3EE7F5BE /* Pods */,
+				0163422AA6504DA7B4D4670B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9890367A27FF0DF900519831 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9890367927FF0DF900519831 /* KRVoice.app */,
+				9890369227FF0DFC00519831 /* KRVoiceTests.xctest */,
+				9890369C27FF0DFC00519831 /* KRVoiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9890367B27FF0DF900519831 /* KRVoice */ = {
+			isa = PBXGroup;
+			children = (
+				9890367C27FF0DF900519831 /* AppDelegate.swift */,
+				9890367E27FF0DF900519831 /* SceneDelegate.swift */,
+				989036B027FF0EDF00519831 /* KRViewController.swift */,
+				989036B127FF0EDF00519831 /* KRVoiceServiceClient.swift */,
+				989A812228061A2F001DC791 /* home.PNG */,
+				989A812B2806263D001DC791 /* Banner.PNG */,
+				989A812A2806263D001DC791 /* SMC.PNG */,
+				989A812028061A1B001DC791 /* HomeTableViewController.swift */,
+				989A812428061CC1001DC791 /* PDPTableViewController.swift */,
+				989036B527FF148300519831 /* ReviewTableViewController.swift */,
+				989A812828061E68001DC791 /* KRListReviewTableViewController.swift */,
+				982E2C4227FF2CEB00F496BA /* AudioInstances.swift */,
+				984D99C7280D07E900AB8C43 /* ReviewItem.swift */,
+				98E990342804B3D3007200B9 /* AudioBuffer.swift */,
+				989A812628061D0E001DC791 /* PDP.PNG */,
+				98E99032280496DE007200B9 /* AudioModel.swift */,
+				989036B727FF15FD00519831 /* Recorder.xib */,
+				989036B827FF15FD00519831 /* RecorderView.swift */,
+				98E990362804C2DE007200B9 /* REcordingButton.swift */,
+				989036AF27FF0EDF00519831 /* Settings.swift */,
+				9890368227FF0DFA00519831 /* Main.storyboard */,
+				9890368827FF0DFB00519831 /* Assets.xcassets */,
+				9890368A27FF0DFB00519831 /* LaunchScreen.storyboard */,
+				9890368D27FF0DFB00519831 /* Info.plist */,
+				9890368527FF0DFA00519831 /* KRVoice.xcdatamodeld */,
+				989A811A28053F57001DC791 /* SSSettingsViewController.swift */,
+				989A811B28053F57001DC791 /* SSSettingsViewController.xib */,
+				989A811E28060079001DC791 /* Theme.swift */,
+				984D99C9280D1BCB00AB8C43 /* KRListReviewTableViewCell.swift */,
+				984D99CA280D1BCB00AB8C43 /* KRListReviewTableViewCell.xib */,
+			);
+			path = KRVoice;
+			sourceTree = "<group>";
+		};
+		9890369527FF0DFC00519831 /* KRVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				9890369627FF0DFC00519831 /* KRVoiceTests.swift */,
+			);
+			path = KRVoiceTests;
+			sourceTree = "<group>";
+		};
+		9890369F27FF0DFC00519831 /* KRVoiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				989036A027FF0DFC00519831 /* KRVoiceUITests.swift */,
+				989036A227FF0DFC00519831 /* KRVoiceUITestsLaunchTests.swift */,
+			);
+			path = KRVoiceUITests;
+			sourceTree = "<group>";
+		};
+		C22E11B389B5F2DD3EE7F5BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B830DCB161C916C0BC8CFC /* Pods-KRVoice.debug.xcconfig */,
+				C1FDE87A10D92266FEC69D04 /* Pods-KRVoice.release.xcconfig */,
+				0F1DA88056EF86989C8911BE /* Pods-KRVoiceTests.debug.xcconfig */,
+				7C32D08026541B734D050413 /* Pods-KRVoiceTests.release.xcconfig */,
+				4D5511298D7C5ECFB8A4FFD6 /* Pods-KRVoiceUITests.debug.xcconfig */,
+				B75DC14824A09BDA47A32A75 /* Pods-KRVoiceUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9890367827FF0DF900519831 /* KRVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989036A627FF0DFC00519831 /* Build configuration list for PBXNativeTarget "KRVoice" */;
+			buildPhases = (
+				7BE36FC4F15FA6482E8BC56D /* [CP] Check Pods Manifest.lock */,
+				9890367527FF0DF900519831 /* Sources */,
+				9890367627FF0DF900519831 /* Frameworks */,
+				9890367727FF0DF900519831 /* Resources */,
+				5BB8A8EBAEFE944D9493D763 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRVoice;
+			productName = KRVoice;
+			productReference = 9890367927FF0DF900519831 /* KRVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9890369127FF0DFC00519831 /* KRVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989036A927FF0DFC00519831 /* Build configuration list for PBXNativeTarget "KRVoiceTests" */;
+			buildPhases = (
+				291A465525F91C3673D4B508 /* [CP] Check Pods Manifest.lock */,
+				9890368E27FF0DFC00519831 /* Sources */,
+				9890368F27FF0DFC00519831 /* Frameworks */,
+				9890369027FF0DFC00519831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9890369427FF0DFC00519831 /* PBXTargetDependency */,
+			);
+			name = KRVoiceTests;
+			productName = KRVoiceTests;
+			productReference = 9890369227FF0DFC00519831 /* KRVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9890369B27FF0DFC00519831 /* KRVoiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989036AC27FF0DFC00519831 /* Build configuration list for PBXNativeTarget "KRVoiceUITests" */;
+			buildPhases = (
+				E7182D0D7D51EF32F4937806 /* [CP] Check Pods Manifest.lock */,
+				9890369827FF0DFC00519831 /* Sources */,
+				9890369927FF0DFC00519831 /* Frameworks */,
+				9890369A27FF0DFC00519831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9890369E27FF0DFC00519831 /* PBXTargetDependency */,
+			);
+			name = KRVoiceUITests;
+			productName = KRVoiceUITests;
+			productReference = 9890369C27FF0DFC00519831 /* KRVoiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9890367127FF0DF900519831 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9890367827FF0DF900519831 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9890369127FF0DFC00519831 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9890367827FF0DF900519831;
+					};
+					9890369B27FF0DFC00519831 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9890367827FF0DF900519831;
+					};
+				};
+			};
+			buildConfigurationList = 9890367427FF0DF900519831 /* Build configuration list for PBXProject "KRVoice" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9890367027FF0DF900519831;
+			productRefGroup = 9890367A27FF0DF900519831 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9890367827FF0DF900519831 /* KRVoice */,
+				9890369127FF0DFC00519831 /* KRVoiceTests */,
+				9890369B27FF0DFC00519831 /* KRVoiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9890367727FF0DF900519831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9890368C27FF0DFB00519831 /* LaunchScreen.storyboard in Resources */,
+				9890368927FF0DFB00519831 /* Assets.xcassets in Resources */,
+				989A812728061D0E001DC791 /* PDP.PNG in Resources */,
+				9890368427FF0DFA00519831 /* Main.storyboard in Resources */,
+				984D99CC280D1BCB00AB8C43 /* KRListReviewTableViewCell.xib in Resources */,
+				989A811D28053F57001DC791 /* SSSettingsViewController.xib in Resources */,
+				989A812D2806263D001DC791 /* Banner.PNG in Resources */,
+				989A812C2806263D001DC791 /* SMC.PNG in Resources */,
+				989A812328061A2F001DC791 /* home.PNG in Resources */,
+				989036B927FF15FD00519831 /* Recorder.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9890369027FF0DFC00519831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9890369A27FF0DFC00519831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		291A465525F91C3673D4B508 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KRVoiceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB8A8EBAEFE944D9493D763 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KRVoice/Pods-KRVoice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KRVoice/Pods-KRVoice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KRVoice/Pods-KRVoice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BE36FC4F15FA6482E8BC56D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KRVoice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7182D0D7D51EF32F4937806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KRVoiceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9890367527FF0DF900519831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989036B427FF0EDF00519831 /* KRVoiceServiceClient.swift in Sources */,
+				98E990372804C2DE007200B9 /* REcordingButton.swift in Sources */,
+				989A812528061CC1001DC791 /* PDPTableViewController.swift in Sources */,
+				989036B327FF0EDF00519831 /* KRViewController.swift in Sources */,
+				989036BA27FF15FD00519831 /* RecorderView.swift in Sources */,
+				989036B627FF148300519831 /* ReviewTableViewController.swift in Sources */,
+				98E99033280496DE007200B9 /* AudioModel.swift in Sources */,
+				98E990352804B3D3007200B9 /* AudioBuffer.swift in Sources */,
+				9890367D27FF0DF900519831 /* AppDelegate.swift in Sources */,
+				9890367F27FF0DF900519831 /* SceneDelegate.swift in Sources */,
+				984D99CB280D1BCB00AB8C43 /* KRListReviewTableViewCell.swift in Sources */,
+				989A812128061A1B001DC791 /* HomeTableViewController.swift in Sources */,
+				989A811F28060079001DC791 /* Theme.swift in Sources */,
+				984D99C8280D07E900AB8C43 /* ReviewItem.swift in Sources */,
+				989A812928061E68001DC791 /* KRListReviewTableViewController.swift in Sources */,
+				982E2C4327FF2CEB00F496BA /* AudioInstances.swift in Sources */,
+				9890368727FF0DFA00519831 /* KRVoice.xcdatamodeld in Sources */,
+				989036B227FF0EDF00519831 /* Settings.swift in Sources */,
+				989A811C28053F57001DC791 /* SSSettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9890368E27FF0DFC00519831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9890369727FF0DFC00519831 /* KRVoiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9890369827FF0DFC00519831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989036A327FF0DFC00519831 /* KRVoiceUITestsLaunchTests.swift in Sources */,
+				989036A127FF0DFC00519831 /* KRVoiceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9890369427FF0DFC00519831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9890367827FF0DF900519831 /* KRVoice */;
+			targetProxy = 9890369327FF0DFC00519831 /* PBXContainerItemProxy */;
+		};
+		9890369E27FF0DFC00519831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9890367827FF0DF900519831 /* KRVoice */;
+			targetProxy = 9890369D27FF0DFC00519831 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9890368227FF0DFA00519831 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9890368327FF0DFA00519831 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9890368A27FF0DFB00519831 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9890368B27FF0DFB00519831 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		989036A427FF0DFC00519831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		989036A527FF0DFC00519831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		989036A727FF0DFC00519831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B830DCB161C916C0BC8CFC /* Pods-KRVoice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = NYQ99APLBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KRVoice/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic required for speech to text";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shebin.KRVoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		989036A827FF0DFC00519831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1FDE87A10D92266FEC69D04 /* Pods-KRVoice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = NYQ99APLBY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KRVoice/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Mic required for speech to text";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shebin.KRVoice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		989036AA27FF0DFC00519831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1DA88056EF86989C8911BE /* Pods-KRVoiceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shebin.KRVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRVoice.app/KRVoice";
+			};
+			name = Debug;
+		};
+		989036AB27FF0DFC00519831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C32D08026541B734D050413 /* Pods-KRVoiceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shebin.KRVoiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KRVoice.app/KRVoice";
+			};
+			name = Release;
+		};
+		989036AD27FF0DFC00519831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5511298D7C5ECFB8A4FFD6 /* Pods-KRVoiceUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shebin.KRVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KRVoice;
+			};
+			name = Debug;
+		};
+		989036AE27FF0DFC00519831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75DC14824A09BDA47A32A75 /* Pods-KRVoiceUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shebin.KRVoiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KRVoice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9890367427FF0DF900519831 /* Build configuration list for PBXProject "KRVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989036A427FF0DFC00519831 /* Debug */,
+				989036A527FF0DFC00519831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989036A627FF0DFC00519831 /* Build configuration list for PBXNativeTarget "KRVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989036A727FF0DFC00519831 /* Debug */,
+				989036A827FF0DFC00519831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989036A927FF0DFC00519831 /* Build configuration list for PBXNativeTarget "KRVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989036AA27FF0DFC00519831 /* Debug */,
+				989036AB27FF0DFC00519831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989036AC27FF0DFC00519831 /* Build configuration list for PBXNativeTarget "KRVoiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989036AD27FF0DFC00519831 /* Debug */,
+				989036AE27FF0DFC00519831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9890368527FF0DFA00519831 /* KRVoice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9890368627FF0DFA00519831 /* KRVoice.xcdatamodel */,
+			);
+			currentVersion = 9890368627FF0DFA00519831 /* KRVoice.xcdatamodel */;
+			path = KRVoice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9890367127FF0DF900519831 /* Project object */;
+}
